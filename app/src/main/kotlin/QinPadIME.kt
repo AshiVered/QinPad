@@ -23,20 +23,20 @@ class QinPadIME : InputMethodService() {
     private val rotResetHandler = Handler()
 
     //layoutIconsNormal, layoutIconsCaps and layouts must match each other
-    private val layoutIconsNormal = arrayOf(R.drawable.ime_latin_normal, R.drawable.ime_hebrew_normal, R.drawable.ime_numbers_normal)
-    private val layoutIconsCaps = arrayOf(R.drawable.ime_latin_caps, R.drawable.ime_hebrew_caps)
+    private val layoutIconsNormal = arrayOf(R.drawable.ime_hebrew_normal, R.drawable.ime_latin_normal, R.drawable.ime_numbers_normal)
+    private val layoutIconsCaps = arrayOf(R.drawable.ime_hebrew_caps, R.drawable.ime_latin_caps, R.drawable.ime_numbers_normal)
     private val layouts = arrayOf(
+        arrayOf( //hebrew
+            " +\n_$#()[]{}", ".,?!'\"1-~@/:\\",
+            "דהו2", "אבג3", "מםנן4",
+            "יכךל5", "זחט6", "רשת7", "צץק8",
+            "סעפף9"
+        ),
         arrayOf( //latin
             " +\n_$#()[]{}", ".,?!¿¡'\"1-~@/:\\", "abc2áäåāǎàçč",
             "def3éēěè", "ghi4ģíīǐì", "jkl5ķļ",
             "mno6ñņóõöøōǒò", "pqrs7ßš", "tuv8úüūǖǘǔǚùǜ",
             "wxyz9ýž"
-        ),
-        arrayOf( //hebrew
-            " +\n_$#()[]{}", ".,?!'\"1-~@/:\\",
-            "דהו2", "אבג3", "מםנן4",
-            "יכל5", "זחט6", "רשת7", "צץק8",
-            "סעפף9"
         ),
             arrayOf( //numbers
                     "0", "1",
