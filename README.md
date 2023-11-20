@@ -1,3 +1,6 @@
+![image](https://raw.githubusercontent.com/AshiVered/support-israel-banner/main/assets/support-israel-banner.jpg)
+
+
 # QinPad - simple and lightweight keyboard app for Xiaomi Qin 1s and compatible keypad Android phones
 Forked from https://gitlab.com/suborg/qinpad.
 # Features
